@@ -14,20 +14,19 @@ import MenuScreen from '../screens/MenuScreen';
 const app = () => {
     return (
         <ScrollView>
-
-
-            
-            <EducationScreen />
-            <PublicationsScreen />
-           <ResearchScreen/>
-            <PersonalInformation />
-            <SignUp />
+ <EducationScreen />
+            {/* <VerifyOTP />
             <SignIn />
-            <VerifyOTP />
-            <MenuScreen />
+            <SignUp />
+
+            <PublicationsScreen />
             <ForgotPassword />
+            <PersonalInformation />
+            <MenuScreen />
+           
+            <ResearchScreen />
             <ResetPassword />
-            <PasswordChanged />
+            <PasswordChanged /> */}
 
 
         </ScrollView>

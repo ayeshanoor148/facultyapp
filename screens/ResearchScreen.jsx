@@ -64,7 +64,7 @@ const ResearchScreen = () => {
 
                 <Text style={styles.sectionTitle}>Research Projects</Text>
                 {projects.map((project, index) => (
-                    <View key={`project-${index}`} style={{ marginBottom: 20 }}>
+                    <View key={`project-${index}`} style={{ marginBottom: 20 }}>                        
                         <TextInput
                             style={styles.inputbox}
                             placeholder="Funding Agency"

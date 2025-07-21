@@ -2,6 +2,7 @@ import { Text, TouchableOpacity, View, TextInput } from "react-native";
 import styles from "../styles/global";
 import { useState } from "react";
 import { useRouter } from 'expo-router';
+import Anticons from '@expo/vector-icons/AntDesign';
 const ForgotPassword = () => {
 
     const [isEmailFocused, setIsEmailFocused] = useState(false);
@@ -27,9 +28,9 @@ const ForgotPassword = () => {
             <View>
 
                 <TextInput
-                    placeholder="👤 Enter your email"
+                    placeholder="Enter your email"
                     style={[
-                        styles.inputbox,
+                        styles.inputbox, styles.inputbox,
                         isEmailFocused && styles.inputboxFocused,
                     ]}
                     onFocus={() => setIsEmailFocused(true)}
@@ -37,6 +38,9 @@ const ForgotPassword = () => {
                     editable={true}  // Explicitly make it editable
                     keyboardType="default"  // Explicit keyboard type
                 />
+                <TouchableOpacity style={styles.inputIcon} >
+                    <Anticons name="user" size={22} color="#888" />
+                </TouchableOpacity>
             </View>
 
 
